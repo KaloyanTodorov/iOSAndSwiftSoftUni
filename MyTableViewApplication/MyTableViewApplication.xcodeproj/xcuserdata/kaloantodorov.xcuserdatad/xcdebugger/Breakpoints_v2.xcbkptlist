@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTableViewController.swift"
+            timestampString = "508386237.151736"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyTableViewApplication/AppDelegate.swift"
+            timestampString = "508355215.302461"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTableViewApplication.AppDelegate.init () -&gt; MyTableViewApplication.AppDelegate"
+                  moduleName = "MyTableViewApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaloantodorov/Documents/iOSAndSwiftSoftUni/MyTableViewApplication/MyTableViewApplication/AppDelegate.swift"
+                  timestampString = "508355385.436081"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyTableViewApplication.AppDelegate.__allocating_init () -&gt; MyTableViewApplication.AppDelegate"
+                  moduleName = "MyTableViewApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaloantodorov/Documents/iOSAndSwiftSoftUni/MyTableViewApplication/MyTableViewApplication/AppDelegate.swift"
+                  timestampString = "508355385.447471"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "MyTableViewApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaloantodorov/Documents/iOSAndSwiftSoftUni/MyTableViewApplication/MyTableViewApplication/AppDelegate.swift"
+                  timestampString = "508355385.457674"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

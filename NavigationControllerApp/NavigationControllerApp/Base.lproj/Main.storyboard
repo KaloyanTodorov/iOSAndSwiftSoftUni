@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ip9-cd-cWg">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="MiS-if-cPI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DOc-NN-5KT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="ip9-cd-cWg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rgf-tP-csy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0Vb-7t-9Tu" kind="relationship" relationship="rootViewController" id="ZVV-tj-Ciu"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-456" y="63"/>
+        </scene>
+        <!--Manchester United-->
+        <scene sceneID="nYv-Ac-Sqc">
+            <objects>
+                <viewController id="0Vb-7t-9Tu" customClass="ViewController" customModule="NavigationControllerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jOX-Sa-Lza"/>
+                        <viewControllerLayoutGuide type="bottom" id="RC6-bR-56w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VP9-Pl-tKO" customClass="viewcontroller">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14329961_10210966183927406_3694538712934838243_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-1f-bqb">
+                                <rect key="frame" x="-273" y="117" width="960" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="HDm-Ya-HTw"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="bzm-4X-MUL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Manchester United" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaP-iP-zhX">
+                                <rect key="frame" x="71" y="313" width="271" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="InR-Vk-VEL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oP7-Vg-KQy">
+                                <rect key="frame" x="159" y="433" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="48Q-C9-xUu"/>
+                                    <constraint firstAttribute="height" constant="30" id="khv-Mz-mLk"/>
+                                </constraints>
+                                <state key="normal" title="More info"/>
+                                <connections>
+                                    <segue destination="Yxe-jj-F4l" kind="show" id="JYM-5i-8b9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oP7-Vg-KQy" firstAttribute="centerX" secondItem="VP9-Pl-tKO" secondAttribute="centerX" id="4Vn-B1-1oN"/>
+                            <constraint firstItem="RaP-iP-zhX" firstAttribute="centerY" secondItem="VP9-Pl-tKO" secondAttribute="centerY" id="7YR-2x-Mi2"/>
+                            <constraint firstItem="RaP-iP-zhX" firstAttribute="leading" secondItem="VP9-Pl-tKO" secondAttribute="leadingMargin" constant="51" id="Q00-gz-Y85"/>
+                            <constraint firstItem="oP7-Vg-KQy" firstAttribute="top" secondItem="RaP-iP-zhX" secondAttribute="bottom" constant="86" id="ZIE-2D-LpA"/>
+                            <constraint firstItem="qcd-1f-bqb" firstAttribute="top" secondItem="jOX-Sa-Lza" secondAttribute="bottom" constant="53" id="beg-nM-Qr3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RaP-iP-zhX" secondAttribute="trailing" constant="52" id="eKY-F9-Vce"/>
+                            <constraint firstItem="qcd-1f-bqb" firstAttribute="centerX" secondItem="VP9-Pl-tKO" secondAttribute="centerX" id="mrR-Ol-QD1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Manchester United" id="aVP-HN-FXS">
+                        <barButtonItem key="backBarButtonItem" title=" " id="rFR-HI-vvS"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="qcd-1f-bqb" id="Ijx-IM-98N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moR-bb-yFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="428.98550724637687" y="61.956521739130437"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="618-EZ-Vs5">
+            <objects>
+                <viewController id="Yxe-jj-F4l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G2X-Us-YkB"/>
+                        <viewControllerLayoutGuide type="bottom" id="MTV-vv-PUK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uoz-C1-RAZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P1r-TG-A9x">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. http://google.com Sofia, 13 Test Str</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MTV-vv-PUK" firstAttribute="top" secondItem="P1r-TG-A9x" secondAttribute="bottom" id="Jr5-Q2-lqG"/>
+                            <constraint firstItem="P1r-TG-A9x" firstAttribute="leading" secondItem="Uoz-C1-RAZ" secondAttribute="leading" id="UAB-c0-qBc"/>
+                            <constraint firstAttribute="trailing" secondItem="P1r-TG-A9x" secondAttribute="trailing" id="geb-oN-iR9"/>
+                            <constraint firstItem="P1r-TG-A9x" firstAttribute="top" secondItem="Uoz-C1-RAZ" secondAttribute="top" id="m1J-qG-nIS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZR-dF-9hF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105.7971014492755" y="102.71739130434783"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="14329961_10210966183927406_3694538712934838243_n.jpg" width="960" height="960"/>
+    </resources>
+</document>

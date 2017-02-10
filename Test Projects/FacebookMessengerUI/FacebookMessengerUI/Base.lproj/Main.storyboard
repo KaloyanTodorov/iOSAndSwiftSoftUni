@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PaX-MV-bRI">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="69S-yG-MdG">
+            <objects>
+                <tableViewController storyboardIdentifier="MessangerTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eMx-Yd-VeF" customClass="MessangerTableViewController" customModule="FacebookMessengerUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vuq-BM-dWg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessangerTableViewCellIdentifier" rowHeight="80" id="hux-xS-iIc" customClass="MessangerTableViewCell" customModule="FacebookMessengerUI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hux-xS-iIc" id="pfM-82-fJM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hello world!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZh-nQ-tBT">
+                                            <rect key="frame" x="76" y="29" width="206" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22:55" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLD-Zg-Utk">
+                                            <rect key="frame" x="345" y="8" width="61" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="61" id="Cb5-M2-qtO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kaloyan Todorov" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-st-0ap">
+                                            <rect key="frame" x="76" y="8" width="236" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="64I-Zv-Uhw"/>
+                                                <constraint firstAttribute="width" constant="236" id="M4l-gn-5V1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lql-Ws-iWe">
+                                            <rect key="frame" x="8" y="10" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="Efy-J9-W0w"/>
+                                                <constraint firstAttribute="height" constant="60" id="Zc4-oB-vd3"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="FacebookImage.jpg"/>
+                                            <connections>
+                                                <action selector="profileImageButtonTapped:" destination="hux-xS-iIc" eventType="touchUpInside" id="sCO-pg-m40"/>
+                                            </connections>
+                                        </button>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wma-BI-g9i">
+                                            <rect key="frame" x="394" y="40" width="12" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="12" id="INR-iK-Hjg"/>
+                                                <constraint firstAttribute="height" constant="12" id="v5F-Pk-GX9"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lZh-nQ-tBT" firstAttribute="leading" secondItem="Lql-Ws-iWe" secondAttribute="trailing" constant="8" id="5Cn-Yf-XfC"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="mLD-Zg-Utk" secondAttribute="trailing" id="8Lh-qA-hoc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="wma-BI-g9i" secondAttribute="trailing" id="8dT-3y-SJb"/>
+                                        <constraint firstItem="wma-BI-g9i" firstAttribute="top" secondItem="mLD-Zg-Utk" secondAttribute="bottom" constant="11" id="X0D-e2-TwZ"/>
+                                        <constraint firstAttribute="topMargin" secondItem="A2p-st-0ap" secondAttribute="top" id="YDe-2G-ShK"/>
+                                        <constraint firstItem="A2p-st-0ap" firstAttribute="leading" secondItem="Lql-Ws-iWe" secondAttribute="trailing" constant="8" id="g94-R3-2Fc"/>
+                                        <constraint firstItem="mLD-Zg-Utk" firstAttribute="top" secondItem="A2p-st-0ap" secondAttribute="top" id="hOZ-lM-xkm"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Lql-Ws-iWe" secondAttribute="bottom" constant="2" id="qcj-sz-GvM"/>
+                                        <constraint firstItem="wma-BI-g9i" firstAttribute="leading" secondItem="lZh-nQ-tBT" secondAttribute="trailing" constant="107" id="swy-gF-MEX"/>
+                                        <constraint firstItem="Lql-Ws-iWe" firstAttribute="top" secondItem="pfM-82-fJM" secondAttribute="topMargin" constant="2" id="t51-z8-rvW"/>
+                                        <constraint firstItem="Lql-Ws-iWe" firstAttribute="leading" secondItem="pfM-82-fJM" secondAttribute="leadingMargin" id="uAR-Mn-PN3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="messageDetailsLabel" destination="lZh-nQ-tBT" id="dcS-0G-hQL"/>
+                                    <outlet property="recepientNameLabel" destination="A2p-st-0ap" id="lKN-mO-rBE"/>
+                                    <outlet property="recipientImageViewButton" destination="Lql-Ws-iWe" id="vVn-xz-UAZ"/>
+                                    <outlet property="statusImageView" destination="wma-BI-g9i" id="sAD-9i-V80"/>
+                                    <outlet property="timeLabel" destination="mLD-Zg-Utk" id="Gwh-C5-NED"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eMx-Yd-VeF" id="tjL-rX-bKl"/>
+                            <outlet property="delegate" destination="eMx-Yd-VeF" id="C6c-cl-Ypl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Wkx-xf-jeo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aea-Gi-d1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.59420289855075" y="-33.423913043478265"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Ft-LQ-M9G">
+            <objects>
+                <navigationController id="PaX-MV-bRI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pZn-tH-Xou">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eMx-Yd-VeF" kind="relationship" relationship="rootViewController" id="HVI-py-TO0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybO-9c-BFN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-640" y="-32"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FacebookImage.jpg" width="960" height="960"/>
+        <image name="facebook_image.jpg" width="960" height="960"/>
+    </resources>
+</document>

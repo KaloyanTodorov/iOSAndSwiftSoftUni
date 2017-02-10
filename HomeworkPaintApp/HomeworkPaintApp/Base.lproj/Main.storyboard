@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="jI8-z3-xFx">
+            <objects>
+                <viewController id="VGA-Z7-Vtz" customClass="ColorsViewController" customModule="HomeworkPaintApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nuq-J5-SGk"/>
+                        <viewControllerLayoutGuide type="bottom" id="eHi-YF-wcg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bzn-mJ-9MG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="3vP-33-LUR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vce-6y-4n5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="87"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="wGD-Ki-LIa">
+            <objects>
+                <viewController id="Wsl-oa-zGZ" customClass="DrawViewController" customModule="HomeworkPaintApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vgb-9M-gLz"/>
+                        <viewControllerLayoutGuide type="bottom" id="IAk-cU-0fv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sN1-pu-kJT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DKd-ZI-9kO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DKd-ZI-9kO" secondAttribute="bottom" id="0ww-99-elt"/>
+                            <constraint firstItem="DKd-ZI-9kO" firstAttribute="top" secondItem="sN1-pu-kJT" secondAttribute="top" id="NEO-Dl-jhw"/>
+                            <constraint firstItem="DKd-ZI-9kO" firstAttribute="leading" secondItem="sN1-pu-kJT" secondAttribute="leading" id="kuG-3t-eyu"/>
+                            <constraint firstAttribute="trailing" secondItem="DKd-ZI-9kO" secondAttribute="trailing" id="wTK-B1-Zeu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="fvx-Xo-D1v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIx-tr-uBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="-565.36731634182911"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hzm-Ab-7bh">
+            <objects>
+                <tabBarController id="cVr-ZG-IXi" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Ep4-x8-hkW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Wsl-oa-zGZ" kind="relationship" relationship="viewControllers" id="ngU-fF-R7g"/>
+                        <segue destination="VGA-Z7-Vtz" kind="relationship" relationship="viewControllers" id="AOs-ts-OKR"/>
+                        <segue destination="bXr-Nn-6RD" kind="relationship" relationship="viewControllers" id="FMU-aF-Fze"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T4u-KE-Vly" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033" y="-242"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="r5V-Xf-GEf">
+            <objects>
+                <viewController id="bXr-Nn-6RD" customClass="BackgroundViewController" customModule="HomeworkPaintApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I2g-aG-oyS"/>
+                        <viewControllerLayoutGuide type="bottom" id="KVd-df-jWQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LaF-gP-yTP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="first" id="LcD-vZ-Vkz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4w-4j-o5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-927" y="593"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
